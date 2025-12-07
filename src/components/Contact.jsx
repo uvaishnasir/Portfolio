@@ -1,57 +1,69 @@
-import React from 'react';
-import { personalInfo } from '../data/constants';
+import { personalInfo } from "../data/constants";
 
 const Contact = () => {
-    return (
-        <section id="contact" className="py-20 bg-[#0f0f0f]">
-            <div className="container-custom">
-                <div className="text-center max-w-3xl mx-auto">
-                    <h2 className="text-4xl font-bold mb-6">
-                        Hey, you scrolled this far, let's talk.
-                    </h2>
-                    <p className="text-gray-400 text-lg mb-8">
-                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-                    </p>
+  return (
+    <section id="contact" className="py-24 px-6 md:px-8 bg-[#0f0f0f]">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+            Hey, you scrolled this far, let's talk.
+          </h2>
+          <p className="text-gray-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your visions.
+          </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                        <a
-                            href={`mailto:${personalInfo.email}`}
-                            className="btn btn-primary text-lg"
-                        >
-                            Email Me
-                        </a>
-                        <a
-                            href={`https://${personalInfo.github}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-outline text-lg"
-                        >
-                            View GitHub
-                        </a>
-                    </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <a
+              href={`mailto:${personalInfo.email}`}
+              className="px-8 py-3.5 text-base font-semibold bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:shadow-lg transition-all no-underline"
+            >
+              Email Me
+            </a>
+            <a
+              href={`https://${personalInfo.github}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3.5 text-base font-semibold bg-transparent text-white border-2 border-gray-700 rounded-lg hover:border-blue-500 hover:text-blue-400 transition-all no-underline"
+            >
+              View GitHub
+            </a>
+          </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
-                        <div>
-                            <p className="text-gray-500 text-sm mb-2">Email</p>
-                            <a href={`mailto:${personalInfo.email}`} className="text-blue-400 hover:text-blue-300">
-                                {personalInfo.email}
-                            </a>
-                        </div>
-                        <div>
-                            <p className="text-gray-500 text-sm mb-2">Phone</p>
-                            <a href={`tel:+91${personalInfo.phone}`} className="text-blue-400 hover:text-blue-300">
-                                +91 {personalInfo.phone}
-                            </a>
-                        </div>
-                        <div>
-                            <p className="text-gray-500 text-sm mb-2">Location</p>
-                            <p className="text-gray-300">{personalInfo.location}</p>
-                        </div>
-                    </div>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+            <div className="p-6 bg-[#111111] rounded-xl border border-gray-800">
+              <p className="text-gray-500 text-sm mb-2 font-semibold uppercase tracking-wide">
+                Email
+              </p>
+              <a
+                href={`mailto:${personalInfo.email}`}
+                className="text-blue-400 hover:text-blue-300 transition-colors break-all no-underline"
+              >
+                {personalInfo.email}
+              </a>
             </div>
-        </section>
-    );
+            <div className="p-6 bg-[#111111] rounded-xl border border-gray-800">
+              <p className="text-gray-500 text-sm mb-2 font-semibold uppercase tracking-wide">
+                Phone
+              </p>
+              <a
+                href={`tel:+91${personalInfo.phone}`}
+                className="text-blue-400 hover:text-blue-300 transition-colors no-underline"
+              >
+                +91 {personalInfo.phone}
+              </a>
+            </div>
+            <div className="p-6 bg-[#111111] rounded-xl border border-gray-800">
+              <p className="text-gray-500 text-sm mb-2 font-semibold uppercase tracking-wide">
+                Location
+              </p>
+              <p className="text-gray-300">{personalInfo.location}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Contact;

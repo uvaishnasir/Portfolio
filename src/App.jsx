@@ -1,37 +1,36 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import './index.css';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import "./index.css";
 
 function App() {
-    return (
-        <div className="App">
-            <Navbar />
+  return (
+    <div className="App">
+      <Navbar />
 
-            {/* Hero Section */}
-            <Hero />
+      {/* Hero Section */}
+      <Hero />
 
-            {/* About Section */}
-            <About />
+      {/* About Section */}
+      <About />
 
-            {/* Experience Section */}
-            <Experience />
+      {/* Experience Section */}
+      <Experience />
 
-            {/* Projects Section */}
-            <Projects />
+      {/* Projects Section */}
+      <Projects />
 
-            {/* Contact Section */}
-            <Contact />
+      {/* Contact Section */}
+      <Contact />
 
-            {/* Footer */}
-            <Footer />
-        </div>
-    );
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

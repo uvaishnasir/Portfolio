@@ -1,39 +1,45 @@
-import React from 'react';
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
-    return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-gray-800">
-            <div className="container-custom">
-                <div className="flex items-center justify-between py-4">
-                    <a href="#" className="text-xl font-bold gradient-text">
-                        Uvaish
-                    </a>
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 dark:bg-white/90 backdrop-blur-sm border-b border-gray-800 dark:border-gray-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
+        <a href="#" className="gradient-text text-xl font-bold no-underline">
+          Uvaish
+        </a>
 
-                    <div className="hidden md:flex items-center gap-8">
-                        <a href="#experience" className="link-hover text-gray-300 hover:text-white">
-                            Work
-                        </a>
-                        <a href="#projects" className="link-hover text-gray-300 hover:text-white">
-                            Projects
-                        </a>
-                        <a href="#about" className="link-hover text-gray-300 hover:text-white">
-                            About
-                        </a>
-                        <a href="#contact" className="btn btn-primary text-sm px-6 py-2">
-                            Contact
-                        </a>
-                    </div>
+        <div className="flex items-center gap-6">
+          <a
+            href="#experience"
+            className="text-gray-300 dark:text-gray-700 no-underline hover:text-white dark:hover:text-black transition-colors"
+          >
+            Work
+          </a>
+          <a
+            href="#projects"
+            className="text-gray-300 dark:text-gray-700 no-underline hover:text-white dark:hover:text-black transition-colors"
+          >
+            Projects
+          </a>
+          <a
+            href="#about"
+            className="text-gray-300 dark:text-gray-700 no-underline hover:text-white dark:hover:text-black transition-colors"
+          >
+            About
+          </a>
 
-                    {/* Mobile menu button - simplified for now */}
-                    <button className="md:hidden text-gray-300">
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
-    );
+          <ThemeToggle />
+
+          <a
+            href="#contact"
+            className="px-6 py-2.5 bg-blue-600 text-white rounded-lg no-underline font-semibold hover:bg-blue-700 transition-colors"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;

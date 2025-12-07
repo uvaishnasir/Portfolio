@@ -1,8 +1,10 @@
 export const personalInfo = {
   name: "Mohd Uvaish",
   title: "Full-Stack Developer",
-  tagline: "Full-stack developer with strong expertise in backend architecture, REST APIs, databases, and scalable full-stack systems.",
-  description: "Experienced in building production-grade applications across Node.js, Express, Prisma, MySQL, MongoDB, and React. Skilled in debugging, system design, and end-to-end product development.",
+  tagline:
+    "Full-stack developer with strong expertise in backend architecture, REST APIs, databases, and scalable full-stack systems.",
+  description:
+    "Experienced in building production-grade applications across Node.js, Express, Prisma, MySQL, MongoDB, and React. Skilled in debugging, system design, and end-to-end product development.",
   email: "uvaishnasir@gmail.com",
   phone: "9410853989",
   location: "Noida, India",
@@ -15,64 +17,64 @@ export const personalInfo = {
       institution: "IMS Engineering College",
       location: "Ghaziabad",
       duration: "2020-2024",
-      cgpa: "8.15"
+      cgpa: "8.15",
     },
     certifications: [
       {
         name: "Data Structures & Algorithms",
-        issuer: "Devsnest"
+        issuer: "Devsnest",
       },
       {
         name: "MERN Stack Development",
-        issuer: "CETPA Infotech Pvt. Ltd."
+        issuer: "CETPA Infotech Pvt. Ltd.",
       },
       {
         name: "Operating Systems and You",
-        issuer: "Coursera"
+        issuer: "Coursera",
       },
       {
         name: "Cloud Computing Basics",
-        issuer: "NASSCOM Foundation"
-      }
+        issuer: "NASSCOM Foundation",
+      },
     ],
     achievements: [
       "Cooperate in Quality Search Test 2019 by R. V. Institute of Technology and won 'Smart Phone'",
-      "Achieved 1st position in 12th standard, showcasing academic excellence"
-    ]
-  }
+      "Achieved 1st position in 12th standard, showcasing academic excellence",
+    ],
+  },
 };
 
 export const socialLinks = [
   {
     name: "LinkedIn",
     url: "https://linkedin.com/in/uvaishnasir",
-    icon: "/assets/linkedin.png"
+    icon: "/assets/linkedin.png",
   },
   {
     name: "GitHub",
     url: "https://github.com/uvaishnasir",
-    icon: "/assets/github.png"
+    icon: "/assets/github.png",
   },
   {
     name: "LeetCode",
     url: "https://leetcode.com/uvaishnasir",
-    icon: "/assets/lc.png"
+    icon: "/assets/lc.png",
   },
   {
     name: "Facebook",
-    url: "http://facebook.com/uvaish.nasir",
-    icon: "/assets/fb.png"
+    url: "http://facebook.com/uvaish.nasir.hussain",
+    icon: "/assets/fb.png",
   },
   {
     name: "Twitter",
     url: "https://twitter.com/uvaishnasir",
-    icon: "/assets/twitter.png"
+    icon: "/assets/twitter.png",
   },
   {
     name: "Instagram",
     url: "http://instagram.com/uvaish.nasir.hussain",
-    icon: "/assets/insta.png"
-  }
+    icon: "/assets/insta.png",
+  },
 ];
 
 export const techStack = {
@@ -82,8 +84,15 @@ export const techStack = {
   databases: ["MySQL", "MongoDB"],
   cloudStorage: ["AWS (S3)", "Cloudinary"],
   tools: ["Git", "GitHub", "Bitbucket", "Postman", "Jira", "VS Code"],
-  concepts: ["DSA", "OOP", "DBMS", "MVC Architecture", "Debugging", "Agile Development"],
-  apis: ["REST APIs", "Payment Gateways", "Shipping/Delivery APIs"]
+  concepts: [
+    "DSA",
+    "OOP",
+    "DBMS",
+    "MVC Architecture",
+    "Debugging",
+    "Agile Development",
+  ],
+  apis: ["REST APIs", "Payment Gateways", "Shipping/Delivery APIs"],
 };
 
 export const experience = [
@@ -99,10 +108,19 @@ export const experience = [
       "Developed and maintained production-grade RESTful APIs using Node.js, Express, Prisma, MySQL",
       "Took end-to-end ownership of backend modules ensuring performance, scalability, and clean architecture",
       "Integrated third-party systems including payment gateways, delivery partner APIs, Google OAuth, Meta Pixel, and geolocation services",
-      "Worked across full stack using React to enhance UI/UX and improve application performance"
+      "Worked across full stack using React to enhance UI/UX and improve application performance",
     ],
-    technologies: ["Node.js", "Express", "Prisma", "MySQL", "React", "JWT", "AWS", "Google OAuth"]
-  }
+    technologies: [
+      "Node.js",
+      "Express",
+      "Prisma",
+      "MySQL",
+      "React",
+      "JWT",
+      "AWS",
+      "Google OAuth",
+    ],
+  },
 ];
 
 export const projects = [
@@ -111,7 +129,9 @@ export const projects = [
     title: "GOODBELLY",
     subtitle: "Food Delivery Platform (Swiggy/Zomato-like)",
     website: "goodbelly.in",
-    description: "A multi-vendor food delivery application where cloud-kitchen vendors can register, create dishes, and users can discover food based on their live location.",
+    link: "https://goodbelly.in",
+    description:
+      "A multi-vendor food delivery application where cloud-kitchen vendors can register, create dishes, and users can discover food based on their live location.",
     features: [
       "Multi-vendor system (each vendor acts like their own cloud kitchen)",
       "Geo-location–based food discovery (5–10 km radius)",
@@ -126,7 +146,7 @@ export const projects = [
       "Responsive product detail page with variants & reviews",
       "Order tracking + order details modal",
       "S3 image upload, Prisma-based database",
-      "Status-based vendor approval"
+      "Status-based vendor approval",
     ],
     responsibilities: [
       "Led 90% of platform development including backend architecture, database design, API development, Frontend development",
@@ -134,71 +154,59 @@ export const projects = [
       "Designed secure authentication (JWT, Google OAuth) for users, vendors, admins",
       "Developed dynamic React components: Checkout, Product Detail, Filters, Vendor Panel",
       "Implemented personalized subscription-based meal plans where users can customize their meals and manage their recurring orders seamlessly",
-      "Built a real-time consultation module where users can connect with health experts for personalized meal advice and diet plans"
+      "Built a real-time consultation module where users can connect with health experts for personalized meal advice and diet plans",
     ],
     technologies: {
       frontend: ["React.js", "Redux Toolkit", "Tailwind CSS"],
       backend: ["Node.js", "Express.js"],
       database: ["Prisma ORM", "MySQL"],
-      other: ["AWS S3", "JWT", "Nodemailer OTP", "Geo-location APIs", "Google OAuth", "Cloudinary", "AWS", "React.js"]
+      other: [
+        "AWS S3",
+        "JWT",
+        "Nodemailer OTP",
+        "Geo-location APIs",
+        "Google OAuth",
+        "Cloudinary",
+        "AWS",
+        "React.js",
+      ],
     },
     image: "/assets/tmpimg.png",
     link: "https://goodbelly.in",
-    featured: true
+    featured: true,
   },
   {
     id: 2,
     title: "Celestiq Beauty",
     subtitle: "Beauty Products E-commerce",
-    description: "An online beauty & skincare shopping platform with product variants, categories, and promotional features.",
+    website: "celestiqbeauty.com",
+    description:
+      "An online beauty & skincare shopping platform with product variants, categories, and promotional features.",
     features: [
       "Complete beauty product catalog system",
       "Product variants (size/weight), stock, price, discount logic",
       "User authentication & cart/wishlist",
       "Checkout with promo codes",
       "SEO-friendly structure (title, keywords, meta)",
-      "Fully responsive product detail page"
+      "Fully responsive product detail page",
     ],
     technologies: {
       frontend: ["React.js", "Bootstrap"],
       backend: ["Node.js", "Express"],
       database: ["MySQL", "Prisma"],
-      other: ["JWT", "Cloud storage for images"]
+      other: ["JWT", "Cloud storage for images"],
     },
     image: "/assets/cloths.jpg",
-    link: null,
-    featured: true
+    link: "https://celestiqbeauty.com",
+    featured: true,
   },
   {
     id: 3,
-    title: "CRAFTKONA",
-    subtitle: "Multi-Vendor Handcrafted Goods Marketplace",
-    website: "craftkona.com",
-    description: "A marketplace where multiple craft sellers list handmade products, manage their store, and handle orders.",
-    features: [
-      "Multi-vendor onboarding & authentication",
-      "Product management (CRUD), categories, images",
-      "Secure order placement & vendor-specific order assignment",
-      "Admin dashboard for approving vendors & managing marketplace",
-      "API development for frontend + vendor panel support",
-      "Optimized backend performance & pagination",
-      "Integration support with payment & shipping modules"
-    ],
-    technologies: {
-      frontend: ["React.js"],
-      backend: ["Node.js", "Express.js"],
-      database: ["MongoDB (Mongoose)"],
-      other: ["JWT", "Cloud storage"]
-    },
-    image: "/assets/movie.webp",
-    link: "https://craftkona.com",
-    featured: true
-  },
-  {
-    id: 4,
     title: "HOTLINE",
     subtitle: "Service Provider Marketplace (Beauty + Home Services)",
-    description: "A marketplace where service professionals (hotliners) can list services like grooming, nail art, home cleaning, etc. Users can search and book services instantly.",
+    website: "hotline.probeyservices.tech",
+    description:
+      "A marketplace where service professionals (hotliners) can list services like grooming, nail art, home cleaning, etc. Users can search and book services instantly.",
     features: [
       "Service listing with pricing, offers, images, descriptions",
       "Vendor (hotliner) authentication & role-based access",
@@ -207,20 +215,20 @@ export const projects = [
       "Admin panel for vendor approval, service control, commission tracking",
       "Category & price management",
       "Full backend + frontend development",
-      "Secure order/service requests + OTP verification"
+      "Secure order/service requests + OTP verification",
     ],
     technologies: {
       frontend: ["React.js"],
       backend: ["Node.js", "Express.js"],
       database: ["MySQL", "Prisma ORM"],
-      other: ["JWT", "Nodemailer", "Cloud uploads"]
+      other: ["JWT", "Nodemailer", "Cloud uploads"],
     },
     image: "/assets/tmpimg.png",
-    link: null,
-    featured: false
+    link: "https://hotline.probeyservices.tech",
+    featured: true,
   },
   {
-    id: 5,
+    id: 4,
     title: "HRMS",
     subtitle: "Human Resource Management System",
     description: "A complete HR management dashboard for companies.",
@@ -231,16 +239,16 @@ export const projects = [
       "Recruitment module",
       "Role-based access control",
       "Department & employee CRUD",
-      "Email notification system with reusable HTML templates"
+      "Email notification system with reusable HTML templates",
     ],
     technologies: {
       frontend: ["React.js", "Redux Toolkit"],
       backend: ["Node.js", "Express.js"],
       database: ["MySQL", "Prisma"],
-      other: ["JWT"]
+      other: ["JWT"],
     },
     image: "/assets/cloths.jpg",
     link: null,
-    featured: false
-  }
+    featured: false,
+  },
 ];
