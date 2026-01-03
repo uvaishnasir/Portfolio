@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 /* Gradient text utility */
 .gradient-text {
   background: linear-gradient(135deg, #60a5fa, #3b82f6);
@@ -25,20 +27,4 @@ body {
 
 * {
   box-sizing: border-box;
-}
-
-/* Dark mode styles */
-html {
-  background-color: #0a0a0a;
-  color: #ffffff;
-}
-
-html.dark {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-html.dark body {
-  background-color: #ffffff;
-  color: #000000;
 }

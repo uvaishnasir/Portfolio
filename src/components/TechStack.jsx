@@ -14,7 +14,7 @@ const TechStack = () => {
       {allTechs.map((tech, index) => (
         <span
           key={index}
-          className="px-4 py-2 bg-slate-800 text-slate-300 rounded-lg text-sm font-medium hover:bg-slate-700 hover:-translate-y-0.5 transition-all cursor-pointer"
+          className="px-4 py-2 bg-gray-100 dark:bg-zinc-800 text-[#0F1419] dark:text-[#6E767D] rounded-lg text-sm font-medium hover:bg-gray-200 dark:hover:bg-zinc-700 hover:-translate-y-0.5 transition-all cursor-pointer"
         >
           {tech}
         </span>

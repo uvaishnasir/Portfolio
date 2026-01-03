@@ -8,11 +8,8 @@ export const ThemeProvider = ({ children }) => {
     const stored = localStorage.getItem("theme");
     if (stored) return stored;
 
-    // Check system preference
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
+    // Default to dark mode
+    return "dark";
   });
 
   useEffect(() => {
