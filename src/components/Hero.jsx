@@ -37,13 +37,13 @@ const Hero = () => {
           </div>
 
           {/* Right side - Profile Image */}
-          <div className="flex justify-center items-center animate-fade-in-delayed mt-8 lg:mt-0">
+          <div className="flex justify-center items-center animate-fade-in-delayed mt-6 lg:mt-0">
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl opacity-75 blur-xl group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
               <img
                 src="/assets/profile.jpg"
                 alt={personalInfo.name}
-                className="relative w-64 h-80 sm:w-72 sm:h-96 md:w-80 md:h-[460px] lg:w-96 lg:h-[540px] rounded-3xl object-cover border-4 border-white dark:border-[#16181C] shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                className="relative w-70 h-90 sm:w-80 sm:h-96 md:w-86 md:h-[420px] rounded-2xl object-cover border-4 border-white dark:border-[#16181C] shadow-2xl transform hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
