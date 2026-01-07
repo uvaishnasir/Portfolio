@@ -4,14 +4,14 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-24 px-6 md:px-8 bg-[#F7F9F9] dark:bg-black"
+      className="py-16 px-6 md:px-8 bg-[#F7F9F9] dark:bg-black"
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <p className="text-sm uppercase tracking-wider text-[#536471] mb-3 font-semibold">
             About
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0F1419] dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0F1419] dark:text-white">
             Me
           </h2>
         </div>

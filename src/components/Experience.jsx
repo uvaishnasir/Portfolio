@@ -4,14 +4,14 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 px-6 md:px-8 bg-[#F7F9F9] dark:bg-black"
+      className="py-16 px-6 md:px-8 bg-[#F7F9F9] dark:bg-black"
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <p className="text-sm uppercase tracking-wider text-[#536471] mb-3 font-semibold">
             Featured
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0F1419] dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0F1419] dark:text-white">
             Experience
           </h2>
         </div>
@@ -22,7 +22,7 @@ const Experience = () => {
             className="bg-white dark:bg-[#16181C] rounded-2xl p-8 border border-[#EFF3F4] dark:border-[#2F3336] mb-8 hover:border-gray-300 dark:hover:border-zinc-700 hover:-translate-y-1 hover:shadow-xl transition-all"
           >
             <div className="mb-6">
-              <h3 className="text-2xl md:text-3xl font-bold mb-3 text-[#0F1419] dark:text-white">
+              <h3 className="text-xl md:text-2xl font-bold mb-3 text-[#0F1419] dark:text-white">
                 {exp.company}
               </h3>
               <p className="text-lg text-blue-600 dark:text-blue-400 mb-3 font-semibold">

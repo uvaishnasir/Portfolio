@@ -11,17 +11,17 @@ const ProjectCard = ({ project }) => {
   ];
 
   return (
-    <div className="bg-white dark:bg-[#16181C] rounded-2xl p-8 border border-[#EFF3F4] dark:border-[#2F3336] mb-8 hover:border-gray-300 dark:hover:border-zinc-700 hover:-translate-y-1 hover:shadow-xl transition-all">
+    <div className="bg-white dark:bg-[#16181C] rounded-2xl p-8 border border-[#EFF3F4] dark:border-[#2F3336] mb-8 hover:border-blue-500 dark:hover:border-blue-600 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 ease-in-out">
       <div className="mb-6">
         {project.featured && (
           <span className="inline-block px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full text-xs font-semibold mb-4">
             Featured
           </span>
         )}
-        <h3 className="text-2xl md:text-3xl font-bold mb-3 text-[#0F1419] dark:text-white">
+        <h3 className="text-xl md:text-2xl font-bold mb-3 text-[#0F1419] dark:text-white">
           {project.title}
         </h3>
-        <p className="text-[#536471] dark:text-[#6E767D] mb-4 text-lg">
+        <p className="text-[#536471] dark:text-[#6E767D] mb-4 text-base">
           {project.subtitle}
         </p>
 
@@ -121,32 +121,34 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-24 px-6 md:px-8 bg-white dark:bg-black"
+      className="py-16 px-6 md:px-8 bg-white dark:bg-black"
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <p className="text-sm uppercase tracking-wider text-[#536471] mb-3 font-semibold">
             Featured
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0F1419] dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0F1419] dark:text-white">
             Projects
           </h2>
         </div>
 
-        <div>
+        {/* Featured Projects */}
+        <div className="mb-16 stagger-children">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
 
+        {/* Other Projects */}
         {otherProjects.length > 0 && (
           <>
-            <div className="mb-12">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold text-[#0F1419] dark:text-white">
                 Other Projects
               </h3>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="stagger-children">
               {otherProjects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}
