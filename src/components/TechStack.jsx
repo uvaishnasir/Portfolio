@@ -6,7 +6,7 @@ const TechStack = () => {
     ...techStack.frontend,
     ...techStack.backend,
     ...techStack.databases,
-    ...techStack.cloudStorage.slice(0, 3),
+    ...techStack.cloudStorage,
   ];
 
   return (
