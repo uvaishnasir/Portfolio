@@ -88,7 +88,7 @@ export const techStack = {
     "Bootstrap",
     "Tailwind CSS",
   ],
-  databases: ["MySQL", "MongoDB", "Redis"],
+  databases: ["MySQL", "MongoDB", "Redis", "PostgreSQL"],
   cloudStorage: ["AWS (S3)", "Docker", "Cloudinary"],
   tools: [
     "Git",
@@ -108,6 +108,7 @@ export const techStack = {
     "MVC Architecture",
     "System Design Basics",
     "Debugging",
+    "Problem-Solving",
     "Agile",
   ],
   apis: [
