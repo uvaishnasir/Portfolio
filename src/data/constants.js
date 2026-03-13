@@ -274,7 +274,7 @@ export const projects = [
     id: 4,
     title: "HOTLINE",
     subtitle: "Service provider marketplace for beauty and home services",
-    website: "hotline.probeyservices.tech",
+    website: "book-hotline.com",
     link: "https://book-hotline.com",
     description:
       "Service provider marketplace where professionals can list services and users can book beauty and home services instantly with real-time availability management.",
