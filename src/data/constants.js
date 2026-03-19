@@ -299,7 +299,7 @@ export const projects = [
     "Optimized API performance and ensured reliability for high-volume requests",
   ],
   technologies: {
-    frontend: ["React.js", "Tailwind CSS", "Redux Toolkit],
+    frontend: ["React.js", "Tailwind CSS", "Redux Toolkit"],
     backend: ["Node.js", "Express.js", "Redis"],
     database: ["MongoDB", "Mongoose ODM"],
     other: [
