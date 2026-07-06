@@ -5,8 +5,8 @@ const TechStack = () => {
     ...techStack.languages,
     ...techStack.frontend,
     ...techStack.backend,
-    ...techStack.databases.slice(0, 2),
-    ...techStack.cloudStorage.slice(0, 1),
+    ...techStack.databases,
+    ...techStack.cloudStorage,
   ];
 
   return (

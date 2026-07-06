@@ -136,6 +136,7 @@ export const techStack = {
     "REST APIs",
     "Performance Optimization",
     "Debugging",
+    "Problem-Solving",
     "Agile",
   ],
   apis: [
@@ -414,8 +415,8 @@ export const projects = [
     id: 7,
     title: "HOTLINE",
     subtitle: "Service provider marketplace for beauty and home services",
-    website: "hotline.probeyservices.tech",
-    link: "https://hotline.probeyservices.tech",
+    website: "book-hotline.com",
+    link: "https://book-hotline.com",
     description:
       "Service provider marketplace where professionals can list services and users can book beauty and home services instantly with real-time availability management.",
     features: [
